@@ -1,13 +1,15 @@
-<h1>Sorteador de amigos secretos para eventos</h1>
+# 🎉 Sorteador de Amigos Secretos para Eventos 🎁
 
-<h2>Sobre</h2>
-<p>Projeto utilizado no curso de lógica de programação, nele você pode sortear quem será o amigo secreto de quem de maneira aletória.</p>
-<p>Para impossibilitar cenários de erros foram geradas condicionais a fim de deixar o código mais completo</p>
+## Sobre
+Este projeto foi criado como parte do curso de lógica de programação. A proposta é proporcionar uma maneira divertida e aleatória de realizar sorteios para eventos de Amigo Secreto. O código inclui condicionais que aprimoram a robustez da aplicação, evitando possíveis cenários de erro.
+
+### Funcionalidades
+- Geração aleatória de pares de Amigo Secreto.
+- Implementação de condicionais para evitar erros.
+- Interface simples e intuitiva para facilitar o uso.
 
 ## Tecnologias
-<div>
-  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-</div>
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
