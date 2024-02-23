@@ -30,6 +30,7 @@ function adicionar() {
 
 // criar function para sortear os amigos que foram adicionados na lista
 function sortear(){
+    document.getElementById('lista-sorteio').innerHTML = '';
     // não deixar sortear se ao menos 4 pessoas não forem add
     if(amigos.length <= 4){
        alert('Adicione ao menos 4 amigos.');
@@ -41,6 +42,7 @@ function sortear(){
     let sorteio = document.getElementById('lista-sorteio'); 
     // criar um loop para export no html o sorteio
     // a variável criada i vai ser o amigos[i], ou seja a posição i da lista que fizemos.
+    // COMO RESOLVER O FOR SEM IF ELSE.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     for(let i = 0; i < amigos.length; i++){
       // a condicional i precisa ser o tamanho da lista de amigos - 1 pois a primeira posição é 0 na lista  
       if(i == amigos.length - 1){
