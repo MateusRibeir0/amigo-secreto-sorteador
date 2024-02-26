@@ -42,7 +42,7 @@ function sortear(){
     let sorteio = document.getElementById('lista-sorteio'); 
     // criar um loop para export no html o sorteio
     // a variável criada i vai ser o amigos[i], ou seja a posição i da lista que fizemos.
-    // COMO RESOLVER O FOR SEM IF ELSE.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    // COMO RESOLVER O FOR SEM IF ELSE.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< considerar q o ultimo sempre vai pegar o primeiro fora do for.
     for(let i = 0; i < amigos.length; i++){
       // a condicional i precisa ser o tamanho da lista de amigos - 1 pois a primeira posição é 0 na lista  
       if(i == amigos.length - 1){
