@@ -36,24 +36,21 @@ function sortear(){
        alert('Adicione ao menos 4 amigos.');
        return;
     }
-    // embaralhe os amigos da lista
+    // Embaralhar os amigos da lista
     embaralha(amigos);
-    // definir uma variavel para o campo do html onde aparece a lista
-    let sorteio = document.getElementById('lista-sorteio'); 
-    // criar um loop para export no html o sorteio
-    // a variável criada i vai ser o amigos[i], ou seja a posição i da lista que fizemos.
-    // COMO RESOLVER O FOR SEM IF ELSE.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< considerar q o ultimo sempre vai pegar o primeiro fora do for.
-    for(let i = 0; i < amigos.length; i++){
-      // a condicional i precisa ser o tamanho da lista de amigos - 1 pois a primeira posição é 0 na lista  
-      if(i == amigos.length - 1){
-        // se atender o valor e o loop tiver atingido o ultimo elemento da lista, precisamos colocar  o ultimo com o primeiro
-        sorteio.innerHTML = sorteio.innerHTML + amigos[i] + '-->' + amigos[0] + '<br>'
-      } else{
-        // se não atender fazemos a mesma coisa mas somamos com o próximo da lista até atingir o ultimo
-      sorteio.innerHTML = sorteio.innerHTML + amigos[i] + '-->' + amigos[i + 1] + '<br>'
-      }
 
+    // Definir uma variável para o campo do HTML onde aparece a lista
+    let sorteio = document.getElementById('lista-sorteio');
+
+    // Criar um loop para exportar no HTML o sorteio
+    for (let i = 0; i < amigos.length; i++) {
+    // Calcular o índice do próximo amigo, considerando a circularidade da lista
+    let proximoIndice = (i + 1) % amigos.length;
+
+    // Adicionar a entrada ao HTML
+    sorteio.innerHTML += amigos[i] + '-->' + amigos[proximoIndice] + '<br>';
     }
+
 }
 // esta função já é preparada na internet e pude adaptar ela para embaralhar o conteudo lista amigos
 function embaralha(lista) {
